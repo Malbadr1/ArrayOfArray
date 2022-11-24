@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -21,7 +22,7 @@ fillArray();
         for (int i = 0; i < row; i++) {
 
             for (int j = 0; j < column; j++) {
-                System.out.println("enter value of row NO:"+i+1+"enter value of column NO:"+j+1);
+                System.out.println("enter value of row NO:"+i+1+" "+"and value of column NO:"+(j+1));
               arr[i][j]= input.nextInt();
 
             }
@@ -29,10 +30,10 @@ fillArray();
 
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                System.out.println(arr[i][j]);
+
 
             }
-            System.out.println();
+            System.out.print(Arrays.deepToString(arr));
         }
         }
 
